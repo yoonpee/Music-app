@@ -1,9 +1,9 @@
 import React from 'react'
 import ListSongs from './ListSongs'
 
-function List( {setSongs, songs,setCurrentSong ,isPlaying} ) {
+function List( {listState, setSongs, songs,setCurrentSong ,isPlaying} ) {
     return (
-        <div className="list">
+        <div className={`list ${listState ? 'list-active' : ""}`}>
             <h2>Music List</h2>
             <div className="list-songs">
                 {songs.map(music =>
