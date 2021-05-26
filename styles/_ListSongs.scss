@@ -1,0 +1,23 @@
+.list-song{
+    display: flex; align-items: center;
+    padding:1.5rem 2rem;
+    transition: background 0.2s ease;
+    
+    img{width: 40%;}
+   
+    &:hover{
+        background:rgb(170, 187, 241)
+    }
+
+}
+.selected{
+    background:rgb(130, 166, 245);
+}
+.description{
+    h3,h4{
+    margin-left: 1rem;
+    color:rgb(163, 160, 160);
+    margin:0.5rem;
+    }
+}
+
